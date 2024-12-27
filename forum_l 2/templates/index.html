@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum_L</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script>
+        function goToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">📖 Forum_Log</div>
+        <nav>
+            <button onclick="goToPage('python.html')">Python</button>
+            <button onclick="goToPage('html.html')">HTML</button>
+            <button onclick="goToPage('css.html')">CSS</button>
+            <button onclick="goToPage('javascript.html')">JavaScript</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Forum_L створений для того, щоб ви могли покращити свої знання у програмуванні</h1>
+        <div class="categories">
+            <button class="category" onclick="goToPage('python.html')">Python</button>
+            <button class="category" onclick="goToPage('html.html')">HTML</button>
+            <button class="category" onclick="goToPage('css.html')">CSS</button>
+            <button class="category" onclick="goToPage('javascript.html')">JavaScript</button>
+        </div>
+    </main>
+</body>
+</html>
