@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1dada;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #dfe7eb;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+nav button:hover {
+    background-color: #a6f3ed;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 200px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Ефект при наведенні */
+button:hover, .category:hover {
+    transform: scale(1.05);
+    background-color: #a6f3ed;
+    transition: transform 0.3s ease;
+}
+
+/* Додаткові стилі для hover */
+.hover-effect {
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
